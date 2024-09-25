@@ -6,7 +6,7 @@ const url = "https://jsonplaceholder.typicode.com/posts";
 const app = express();
 const port = 3000;
 
-app.get("/data", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     const response = await axios.get(url);
 
